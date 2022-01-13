@@ -14,7 +14,7 @@ CHANGLOG V1.0.1
 
 CHANGELOG V1.0.2
 
--- GUI revamp.
+-- Slight GUI revamp.
 
 -- You can drag the GUI's now.
 

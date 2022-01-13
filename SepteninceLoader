@@ -1,0 +1,621 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local SepteninceLoading = Instance.new("Frame")
+local SepteninceHeader = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local RequestStatus = Instance.new("TextLabel")
+local LoadingBar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SepteninceLoading.Name = "SepteninceLoading"
+SepteninceLoading.Parent = ScreenGui
+SepteninceLoading.BackgroundColor3 = Color3.fromRGB(30, 0, 0)
+SepteninceLoading.Position = UDim2.new(0.39585492, 0, 0.309823692, 0)
+SepteninceLoading.Size = UDim2.new(0, 459, 0, 178)
+SepteninceLoading.ZIndex = 0
+
+SepteninceHeader.Name = "SepteninceHeader"
+SepteninceHeader.Parent = SepteninceLoading
+SepteninceHeader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SepteninceHeader.BackgroundTransparency = 1.000
+SepteninceHeader.Position = UDim2.new(0.14404732, 0, 0.057792902, 0)
+SepteninceHeader.Size = UDim2.new(0, 340, 0, 73)
+SepteninceHeader.Font = Enum.Font.Gotham
+SepteninceHeader.Text = "Septenince Loader"
+SepteninceHeader.TextColor3 = Color3.fromRGB(255, 255, 255)
+SepteninceHeader.TextSize = 30.000
+SepteninceHeader.TextYAlignment = Enum.TextYAlignment.Top
+
+Status.Name = "Status"
+Status.Parent = SepteninceLoading
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.295190722, 0, 0.181776643, 0)
+Status.Size = UDim2.new(0, 200, 0, 50)
+Status.Font = Enum.Font.Gotham
+Status.Text = "Loading"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextSize = 20.000
+Status.TextStrokeTransparency = 9.000
+
+ImageLabel.Parent = SepteninceLoading
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-5.91389835e-08, 0, -3.7252903e-09, 0)
+ImageLabel.Size = UDim2.new(0, 59, 0, 57)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=8523287553"
+
+RequestStatus.Name = "RequestStatus"
+RequestStatus.Parent = SepteninceLoading
+RequestStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RequestStatus.BackgroundTransparency = 1.000
+RequestStatus.Position = UDim2.new(0.296296299, 0, 0.466292143, 0)
+RequestStatus.Size = UDim2.new(0, 200, 0, 50)
+RequestStatus.Font = Enum.Font.Gotham
+RequestStatus.Text = "Status:"
+RequestStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
+RequestStatus.TextSize = 20.000
+
+LoadingBar.Name = "LoadingBar"
+LoadingBar.Parent = SepteninceLoading
+LoadingBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingBar.BorderSizePixel = 0
+LoadingBar.Position = UDim2.new(0.0435730219, 0, 0.741573095, 0)
+LoadingBar.Size = UDim2.new(0, 0, 0, 13)
+
+TextLabel.Parent = SepteninceLoading
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.296296269, 0, 0.780898869, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+UICorner.Parent = SepteninceLoading
+
+-- Scripts:
+
+local function BQGMGLH_fake_script() -- Status.LocalScript 
+	local script = Instance.new('LocalScript', Status)
+
+	local Parent = script.Parent
+	local Main = script.Parent.Parent.Parent.SepteninceLoading
+	local Header = script.Parent.Parent.SepteninceHeader
+	local FunFact = script.Parent.Parent.TextLabel
+	local Loading = script.Parent.Parent.LoadingBar
+	local Logo2 = script.Parent.Parent.ImageLabel
+	local Status = script.Parent.Parent.RequestStatus
+	
+	
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (0.6)
+		Parent.Text = "Loading."
+		wait (0.6)
+		Parent.Text = "Loading.."
+		wait (0.6)
+		Parent.Text = "Loading..."
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		wait (.6)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		wait (0.6)
+		Parent.Text = "Loading"
+		wait (.6)
+		Parent.Text = "Loaded!"
+	
+		wait (3)
+		for i = 1 , 100 do
+		Main.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		Header.TextTransparency += 0.01
+		FunFact.TextTransparency += 0.01
+		Loading.BackgroundTransparency += 0.01
+		Logo2.ImageTransparency += 0.01
+		Status.TextTransparency += 0.01
+			wait(0.01)
+	end
+	Main.Visible = false
+	Parent.Visible = false
+	Header.Visible = false
+	FunFact.Visible = false
+	Loading.Visible = false
+	Logo2.Visible = false
+	Status.Visible = false
+end
+coroutine.wrap(BQGMGLH_fake_script)()
+local function MBOO_fake_script() -- RequestStatus.LocalScript 
+	local script = Instance.new('LocalScript', RequestStatus)
+
+	local Parent = script.Parent
+	local Transparency = Parent.TextTransparency
+	local plr = game.Players.LocalPlayer
+	
+	
+	
+	Parent.Text = "Status:  Finding game..."
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Status:  Game found"
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	if game.PlaceId == 2788229376 then
+		
+		
+		Parent.Text = "Status:  Supported game! Da hood."
+		wait (2)
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency -= 0.01
+			Parent.TextTransparency -= 0.01
+			wait(0.01)
+		end
+		for i = 1 , 100 do
+			Parent.BackgroundTransparency += 0.01
+			Parent.TextTransparency += 0.01
+			wait(0.01)
+		end
+		
+	else if game.PlaceId == 4581966615 then
+			
+			
+			Parent.Text = "Status:  Supported game! Anomic."
+			wait (2)
+			for i = 1 , 100 do
+				Parent.BackgroundTransparency -= 0.01
+				Parent.TextTransparency -= 0.01
+				wait(0.01)
+			end
+			for i = 1 , 100 do
+				Parent.BackgroundTransparency += 0.01
+				Parent.TextTransparency += 0.01
+				wait(0.01)
+			end
+		else if game.PlaceId == 1224212277 then
+				
+				
+				Parent.Text = "Status:  Supported game! Madcity."
+				wait (2)
+				for i = 1 , 100 do
+					Parent.BackgroundTransparency -= 0.01
+					Parent.TextTransparency -= 0.01
+					wait(0.01)
+				end
+				for i = 1 , 100 do
+					Parent.BackgroundTransparency += 0.01
+					Parent.TextTransparency += 0.01
+					wait(0.01)
+				end
+			else if game.PlaceId == 8522526128 then
+		
+					Parent.Text = "Status:  Supported game! Test place."
+					wait (2)
+					for i = 1 , 100 do
+						Parent.BackgroundTransparency -= 0.01
+						Parent.TextTransparency -= 0.01
+						wait(0.01)
+					end
+					for i = 1 , 100 do
+						Parent.BackgroundTransparency += 0.01
+						Parent.TextTransparency += 0.01
+						wait(0.01)
+					end
+					
+				else
+					
+					Parent.Text = "Unsupported game. Kicking..."
+					wait (2)
+					for i = 1 , 100 do
+						Parent.BackgroundTransparency -= 0.01
+						Parent.TextTransparency -= 0.01
+						wait(0.01)
+					end
+					for i = 1 , 100 do
+						Parent.BackgroundTransparency += 0.01
+						Parent.TextTransparency += 0.01
+						wait(0.01)
+					end
+					wait(5)
+					plr:kick("Unsupported game.")
+				end
+			end
+		end	
+	end
+	
+	
+	Parent.Text = "Getting scripts..."
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Finishing up..."
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	wait (2)
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	
+end
+coroutine.wrap(MBOO_fake_script)()
+local function CAPGDJ_fake_script() -- LoadingBar.LocalScript 
+	local script = Instance.new('LocalScript', LoadingBar)
+
+	local Parent = script.Parent
+	
+	
+	wait (3)
+	Parent:TweenSize(UDim2.new(0, 46,0, 13), "Out", "Quad", 2, true)
+	wait (10)
+	Parent:TweenSize(UDim2.new(0, 90,0, 13), "Out", "Quad", 2, true)
+	wait (8)
+	Parent:TweenSize(UDim2.new(0, 137,0, 13), "Out", "Quad", 2, true)
+	wait (12)
+	Parent:TweenSize(UDim2.new(0, 189,0, 13), "Out", "Quad", 2, true)
+	wait (6)
+	Parent:TweenSize(UDim2.new(0, 257,0, 13), "Out", "Quad", 2, true)
+	wait (9)
+	Parent:TweenSize(UDim2.new(0, 327,0, 13), "Out", "Quad", 2, true)
+	wait (7)
+	Parent:TweenSize(UDim2.new(0, 369,0, 13), "Out", "Quad", 2, true)
+	wait(8)
+	Parent:TweenSize(UDim2.new(0, 419,0, 13), "Out", "Quad", 2, true)
+end
+coroutine.wrap(CAPGDJ_fake_script)()
+local function XDRFHP_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local Parent = script.Parent
+	
+	Parent.Text = "Fun fact: Septenince is made by only one person."
+	wait (2)
+	
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: Septenince old name was SkidHub."
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: I learnt coding from making these scripts!"
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	Parent.Text = "Fun fact: Septenince has mod perms, check the discord for more info!"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "This is my first animated UI! Do you like it?"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	Parent.Text = "Fun fact: Septenince is made by only one person."
+	wait (2)
+	
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: Septenince old name was SkidHub."
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: I learnt coding from making these scripts!"
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	Parent.Text = "Fun fact: Septenince has mod perms, check the discord for more info!"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "This is my first animated UI! Do you like it?"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	Parent.Text = "Fun fact: Septenince is made by only one person."
+	wait (2)
+	
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: Septenince old name was SkidHub."
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "Fun fact: I learnt coding from making these scripts!"
+	
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	Parent.Text = "Fun fact: Septenince has mod perms, check the discord for more info!"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+	Parent.Text = "This is my first animated UI! Do you like it?"
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency -= 0.01
+		Parent.TextTransparency -= 0.01
+		wait(0.01)
+	end
+	for i = 1 , 100 do
+		Parent.BackgroundTransparency += 0.01
+		Parent.TextTransparency += 0.01
+		wait(0.01)
+	end
+	
+end
+coroutine.wrap(XDRFHP_fake_script)()

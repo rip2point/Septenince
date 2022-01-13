@@ -2,6 +2,8 @@ Septenince is a upcoming da hood script.
 
 Using V1 of Septenince will get you perma banned from da hood, the issue has been fixed.
 
+Current key is SpeteninceWinning
+
 CHANGLOG V1
 
 -- Key system added.
@@ -23,3 +25,7 @@ CHANGELOG V1.0.2
 -- Fixed small visual bugs.
 
 -- Hopefully on V1.0.3 the script will be fully done!
+
+CHANGELOG V1.0.2.1
+
+-- Fixed bug where GUI wouldnt load.

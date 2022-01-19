@@ -18,6 +18,7 @@ if (BLACKLISTED[User]) then
    while true do
        print("skid")
        end
+       LocalPlayer:kick("you have been permantly blacklisted from using the script.")
 else
     print ("good job on not getting blacklisted ! :-) - devs")
 end

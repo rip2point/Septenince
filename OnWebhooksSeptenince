@@ -1,0 +1,11 @@
+Alright, so basically if you were to use a HTTP spy with Septenince you would probably find out there are AT THE WRITING OF THIS, 2 webhooks, now as some people may know
+some scripts do log your ip with webhooks, Septenince does not and I can tell you what both webhooks are for:
+
+So the first webhook is LITERALLY PUBLIC in the server, it just is for our "Report bugs" feature on the script.
+
+Are second webhook is private, but just logs your username. Just incase you didnt know (not calling anyone out as i personally think its fine to do) Faded and Valiant and I'm
+pretty sure swagmode does it too, all of these dh scripts I mentioned log ur username.
+
+If you are not feeling safe using the script, I will reccomend you to use a VPN as your ip is hidden from attackers.
+
+Septenince is open about using webhooks, as we want all users to know what we log for their safety.

@@ -1,0 +1,53 @@
+--[[
+yo, if your on this list you have really pissed off a dev.
+--]]
+
+local GlobalPlayers = game:GetService("Players");
+local LocalPlayer = Players.LocalPlayer;
+local User = LocalPlayer.UserId;
+local BLACKLISTED = {
+   [USERIDHERE] = true;
+}
+
+if (BLACKLISTED[User]) then
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PermaBan = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+PermaBan.Name = "PermaBan"
+PermaBan.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PermaBan.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = PermaBan
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.0512953363, 0, 0.278634369, 0)
+Frame.Size = UDim2.new(0, 308, 0, 225)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.0041152616, 0)
+TextLabel.Size = UDim2.new(0, 308, 0, 224)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "get banned bitch"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+wait (2)
+while true do
+print("get banned loser")
+
+end
+
+else
+    print ("good job on not getting blacklisted ! :-) - devs")
+end

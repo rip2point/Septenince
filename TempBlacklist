@@ -1,0 +1,22 @@
+--[[
+
+24hr blacklist, make sure to mark when they were blacklisted so we know when to unblacklist them! :-)
+impossible to bypass btw
+
+--]]
+
+local GlobalPlayers = game:GetService("Players");
+local LocalPlayer = Players.LocalPlayer;
+local User = LocalPlayer.UserId;
+local BLACKLISTED = {
+   [USERIDHERE] = true;
+}
+
+if (BLACKLISTED[User]) then
+   while true do
+       print("skid")
+       end
+       LocalPlayer:kick("you have been blacklisted for 24HRs.")
+else
+    print ("your not tempblacklisted woohoo yay! :-)")
+end

@@ -1,0 +1,56 @@
+--[[
+
+impossible blacklist bypass, feel free to fork or whatever
+currently no blacklisted users.
+fun fact i made this in github, hopefully there isnt any bugs!
+
+--]]
+
+
+local GlobalPlayers = game:GetService("Players");
+local LocalPlayer = Players.LocalPlayer;
+local User = LocalPlayer.UserId;
+local BLACKLISTED = {
+   [USERIDHERE] = true;
+}
+
+if (BLACKLISTED[User]) then
+   while true do
+       print("skid")
+       end
+else
+    print ("good job on not getting blacklisted ! :-) - devs")
+end
+
+--[[
+
+if you dont know how this works let me explain.
+the variable "GlobalPlayers" is ALL the players basically (you can use this for a global whitelist/blacklist.
+the variable "LocalPLayer" is YOU! 
+the variable "User" is YOUR userid!
+and the variable "BLACKLISTED" >:( is the userid of the blacklisted user
+
+"if (BLACKLISTED[User]) then
+   while true do
+       print("skid")
+       end
+else" .. psst, hey its me. I'm here to tell you how this works! :-)
+ok so basically if the your userid matches the userid thats blacklisted it starts a script
+"while true do
+  print("skid")
+  end
+  
+ok so how this works is a while true do statement basically means loop, but why not just kick the user? bypassing a local kick is very easy to bypass
+but because there is no "wait()" statment in the script, it will repeat the "print ("skid")" statement so fast it will crash your game
+  
+"end
+else"
+ok so how this works is the else statement is basically if your userid does not math with the BLACKLISTED user variable it will print yay your not blacklisted
+the script only crashes your game if your userid matches with the userid's in the BLACKLISTED variable, you can use this script to make a whitelist too! :-)
+
+-devs
+
+--]]
+
+
+

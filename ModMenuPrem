@@ -1,0 +1,18 @@
+[[--
+
+Hey skiddo, I hope you know that when you use this if you are epileptic you will get epilepsy, btw ur not impressing anyone by leaking this!!11!!! :pogr:
+
+wont work unless whitelisted lmao
+
+--]]
+
+local Father = game.Players.UrFather
+local Child = game.Players.LocalPlayer
+local Unexist = Kick
+local Adopt = Fatherless i guess
+
+if Father then
+print("error!!1111!! child is not fatherless")
+else
+Child:Unexist(Adopt)
+end

@@ -4,4 +4,4 @@ Septenince is lua script designed for the game on Roblox "Da hood", "Anomic", an
 
 ## Changelog
 
-Coming soon.
+[CHANGELOG](https://github.com/rip2point/Septenince/blob/main/Info/CHANGELOG.md)

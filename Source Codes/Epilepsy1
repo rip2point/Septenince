@@ -1,0 +1,9 @@
+while true do
+
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/rip2point/Septenince/main/Source%20Codes/Ep1"))()
+
+wait ()
+
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/rip2point/Septenince/main/Source%20Codes/Ep2"))()
+
+end

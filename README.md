@@ -8,4 +8,4 @@
 
 ## LOADSTRING (SCRIPT)
 
-
+[GET SCRIPT HERE](https://github.com/rip2point/Septenince/blob/main/Main/Main)

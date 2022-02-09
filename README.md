@@ -4,3 +4,4 @@
 
 ## CHANGELOG
 
+[CHANGELOG](https://github.com/rip2point/Septenince/blob/main/Info/CHANGELOG.md)

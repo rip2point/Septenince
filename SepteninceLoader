@@ -17,6 +17,8 @@
 
 thx piano ;)
 
+btw this is just for if you have crappy internet just to make sure the gui looks good when it loads in lmao
+doesnt do anything but yea
 ]]--
 
 local ScreenGui = Instance.new("ScreenGui")
